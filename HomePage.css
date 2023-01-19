@@ -1,0 +1,373 @@
+ 
+ body{
+    margin: 0;
+ }
+
+ .firstBlog{grid-area: first;}
+ .secondBlog{grid-area: second;}
+ .thirdBlog{grid-area: third;}
+ .mainTopics{
+    display: grid;
+    grid-template-areas: 'first  first second second'
+                         'first first   second second'
+                         'first  first  third third'
+                         ;
+    grid-gap: 10px;
+    grid-template-columns: 10px  400px;
+    grid-template-rows: 52px    110px;
+}
+
+
+.HomeNav{
+    display: flex;
+    background-color:#f2f2f2;
+    
+}
+
+ .HomeNav > nav ul li{   
+   
+     display: inline-block;
+     padding: 12px 10px 30px 200px;
+}
+  
+.HomeNav   .navBottons {
+   list-style: none;
+}
+ 
+
+
+.content{  
+     
+      height: 500px;
+      margin-left: 15%;
+      margin-right: 20%;
+      padding-top: 10px;
+  
+    border-radius: 10px;
+}
+.firstBlog{
+   color: #ddd;
+   width: 400px;
+   height: 400px;
+    background-color: rgb(215, 215, 225);
+    border-radius: 10px;
+    background-image: url('images/web1.jpg');
+    background-size: cover;
+ }
+ 
+ .mainTopics{
+    padding-top: 10px;
+ }
+ .firstBlog h1{
+    padding-top: 52px;
+    text-align: center;
+    margin-top: 160px;
+ }
+
+ .secondBlog{
+     margin-top: 2px;
+     height: 200px;
+     background-color: rgb(173, 127, 67);
+     background-image: url('images/web2.jpg');
+     background-size: cover;
+ }
+ .thirdBlog{
+    margin-top: 25px;
+    height: 200px;
+   background-color: rgb(178, 129, 65);
+   background-image: url('images/01.jpg');
+   background-size: cover; 
+}
+.box{
+    border-radius: 10px;
+}
+
+
+.highLights{grid-area: One;}
+.trendAndRecent{grid-area: two;
+   position: -webkit-sticky; /* Safari */
+   position: sticky;
+   top: 130px;
+}
+ 
+.blogArea{
+   display: grid;
+   grid-template-areas: 'One One  two'
+                        'One One  two'
+                        'One One  two'
+                        ;
+   grid-gap: 50px;
+   grid-template-columns: 400px 34% 400px;
+   grid-template-rows: 52px 35% 243px;
+}
+  
+.highLights{
+   margin-left: 19%;
+    
+}
+ 
+.highLights > div  {
+    
+    
+    margin-left: 2%;
+   
+    margin-bottom: 15px;
+    display: inline-block;
+    
+}
+.highLights > div img{
+   height: 200px;
+   width: 350px;    
+   text-align: center;
+   background-size: cover;    
+   border-radius: 10px;     
+   
+}
+ 
+   
+.blogArea{
+   margin-left: 40px;
+}
+  footer{
+   background-color: rgb(46, 53, 53);
+  }
+
+
+
+
+/*FOOTER AREA*/
+
+footer{
+   margin-top: 300px;
+   background-color: #373447;
+   padding: 2em;
+   text-align: center;
+}
+footer h1 {
+   margin-bottom: 1em;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+   
+}
+th, td {
+   padding: 0.5em 1em;
+   border-bottom: 1px solid #ddd;
+   border: 0;
+}
+th {
+   font-weight: bold;
+}
+/*FOOTER AREA*/
+
+
+
+
+/*trendAndRecent AREA*/
+
+.trendAndRecent > div{
+   display: inline-block;
+}
+.trendAndRecent > div img{
+  height:100px;
+   width: 200px;    
+    margin-left: 5px;
+   border-radius: 10px;     
+    margin-bottom: 20px;
+     float: left;
+}
+ 
+.trendAndRecent > div p{
+   
+   margin-left: 210px;
+   
+   white-space: pre-wrap;
+}
+ 
+
+/*trendAndRecent AREA*/
+
+
+
+
+/*PHONE SIZE*/
+
+@media only screen and (max-width: 400px) {
+   /* For mobile phones: */
+
+
+   .HomeNav{
+    max-width: 330px;
+      display: flex;
+      background-color:#f2f2f2;
+      
+  }
+  
+   .HomeNav > nav ul li{   
+     
+       display: inline-block;
+       padding: 12px 10px 30px 100px;
+  }
+    
+  .HomeNav   .navBottons {
+     list-style: none;
+  }
+
+
+
+   .firstBlog{grid-area: first;}
+   .secondBlog{grid-area: second;}
+   .thirdBlog{grid-area: third;}
+   .mainTopics{
+      display: grid;
+      grid-template-areas: 'first  first'
+                           'first first  ' 
+                           'first  first ' 
+                           'second second'
+                           'second second'
+                           'third third'
+
+
+
+                           ;
+      grid-gap: 10px;
+      grid-template-columns: 10px  400px;
+      grid-template-rows: 62px   10%;
+  }
+  
+
+
+.content{  
+     
+   max-width: fit-content;
+   margin-left: 3%;
+    
+   padding-top: 10px;
+    border-radius: 10px;
+    
+    justify-content: center;
+}
+.firstBlog{
+color: #ddd;
+width: 250px;
+height: 190px;
+ background-color: rgb(215, 215, 225);
+ border-radius: 10px;
+ background-image: url('images/web1.jpg');
+ background-size: cover;
+}
+
+.mainTopics{
+ padding-top: 10px;
+}
+.firstBlog h1{
+ padding-top: 52px;
+ text-align: center;
+ margin-top: 160px;
+}
+
+.secondBlog{
+  margin-top: 2px;
+  width: 250px;
+height: 190px;
+  background-color: rgb(173, 127, 67);
+  background-image: url('images/web2.jpg');
+  background-size: cover;
+}
+.thirdBlog{
+ margin-top: 2px;
+ width: 250px;
+ height: 190px;
+background-color: rgb(178, 129, 65);
+background-image: url('images/01.jpg');
+background-size: cover; 
+}
+.box{
+ border-radius: 10px;
+}
+
+
+
+
+
+/*BLOG AREA*/
+
+.highLights{grid-area: One;}
+.trendAndRecent{grid-area: two;
+    
+}
+ 
+.blogArea{
+   display: grid;
+   grid-template-areas: 'One One  '
+                        'One One '
+                        'One One  '
+                        'two two'
+                        'two two'         
+                        ;
+   grid-gap: 10px;
+   display: block;
+   
+}
+  
+.highLights{
+   margin-left: 0px;
+    
+}
+ 
+.highLights > div  {
+    
+    
+     
+   
+    margin-bottom: 15px;
+    display: inline-block;
+    
+}
+.highLights > div img{
+   width: 250px;
+   height: 190px;
+   text-align: center;
+   background-size: cover;    
+   border-radius: 10px;     
+   
+}
+ 
+   
+.blogArea{
+   margin-left: 40px;
+   margin-top: 70%;
+}
+
+
+
+/*FOOTER AREA*/
+
+footer{
+   margin-top: 300px;
+   background-color: #373447;
+   padding: 2em;
+   text-align: center;
+}
+footer h1 {
+   margin-bottom: 1em;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+   
+}
+th, td {
+   padding: 0.5em 1em;
+   border-bottom: 1px solid #ddd;
+   border: 0;
+}
+th {
+   font-weight: bold;
+}
+/*FOOTER AREA*/
+
+
+
+ }
